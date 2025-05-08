@@ -1,0 +1,99 @@
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+  }
+  
+  /* Profile Heading */
+  .profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Profile Details */
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Profile Item */
+  .profile-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Label */
+  .profile-item .label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Value */
+  .profile-item .value {
+    color: #333;
+  }
+  
+  /* Edit Input */
+  .edit-input {
+    width: 60%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Profile Actions */
+  .profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .save-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .profile-container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    .profile-item {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .edit-input {
+      width: 100%;
+    }
+  }

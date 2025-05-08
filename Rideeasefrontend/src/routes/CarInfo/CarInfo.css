@@ -1,0 +1,77 @@
+/* CarInfo.css */
+
+.car-info {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .car-info h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  /* VIN form styling */
+  .vin-form {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .vin-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .vin-form input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto 12px auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .vin-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .vin-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Car details styling */
+  .car-info-details p {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .car-info-details p strong {
+    display: inline-block;
+    width: 120px; /* Ensures the label parts line up nicely */
+  }
+  
+  /* Loading and error messages */
+  .car-info-loading,
+  .car-info-error {
+    text-align: center;
+    font-size: 18px;
+    padding: 24px;
+  }
+  

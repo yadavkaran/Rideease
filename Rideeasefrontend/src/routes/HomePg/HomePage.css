@@ -1,0 +1,35 @@
+/* Ensure the entire page height is 100vh */
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Navbar styling with background color */
+.custom-navbar {
+  background-color: #282c34;
+  color: white;
+  z-index: 10; /* Ensure Navbar stays on top */
+  flex-shrink: 0; /* Prevent the Navbar from shrinking */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: white !important; /* Make sure the text in Navbar is visible */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #61dafb; /* Change color when hovering */
+}
+
+/* Map container that takes up remaining space */
+.map-container {
+  flex-grow: 1; /* This allows it to take up the remaining space */
+  height: calc(100vh - 56px); /* Full height minus Navbar height (56px is the default height of Navbar) */
+  position: relative;
+}
+
+/* Optional: Adjust footer to ensure it's outside the visible area */
+.landing-footer {
+  display: none; /* Hide footer */
+}

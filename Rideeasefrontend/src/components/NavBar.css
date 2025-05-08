@@ -1,0 +1,61 @@
+/* NavbarComponent.css */
+.custom-navbar {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 20px; /* Adjusted padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.custom-navbar .navbar-brand {
+  color: white !important;
+  font-size: 1.5rem; /* Increased font size for better visibility */
+  font-weight: bold;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.custom-navbar .navbar-nav {
+  display: flex;
+  justify-content: center; /* Center align navigation links */
+  width: 100%; /* Ensure nav links take full width */
+}
+
+.custom-navbar .nav-link {
+  color: white !important;
+  margin: 0 10px; /* Add spacing between links */
+  font-size: 1rem; /* Standardize font size */
+  text-transform: capitalize;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #61dafb; /* Hover color */
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Reduced border visibility */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-color: white;
+}
+
+.custom-navbar .logout-link {
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .custom-navbar .navbar-brand {
+    font-size: 1.2rem; /* Adjust brand size */
+  }
+
+  .custom-navbar .nav-link {
+    margin: 5px 0; /* Vertical spacing for mobile */
+  }
+}

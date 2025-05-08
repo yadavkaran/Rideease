@@ -1,0 +1,172 @@
+/* Container for the entire payment area */
+.payment-container {
+    max-width: 480px;
+    margin: 60px auto;
+    background-color: #333232;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.08); 
+    font-family: monospace;
+  }
+  
+  /* Product display header */
+  .product-display {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .product-display img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  
+  .product-display .description h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .product-display .description h5 {
+    margin: 4px 0 0 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+  
+  /* Payment success box */
+  .payment-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    animation: fadeIn 0.6s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* The payment form itself */
+  .payment-form {
+    margin-top: 16px;
+  }
+  
+  /* Style each label uniformly */
+  .payment-form label {
+    display: block;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ccc;
+  }
+  
+  /* For input fields (Name on Card) */
+  .payment-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background: #222;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  .payment-form input:focus {
+    border-color: #666;
+  }
+  
+  /* Stripe's CardElement styled identically to the input */
+  .payment-form .StripeElement {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    background-color: #222;
+    border-radius: 6px;
+    border: 1px solid #333;
+    margin-top: 6px;
+    transition: border 0.3s ease;
+  }
+  
+  .payment-form .StripeElement--focus {
+    border-color: #666 !important;
+  }
+  
+  /* Generic button styling (used for Pay Now) */
+  .payment-form button {
+    margin-top: 24px;
+    padding: 14px 20px;
+    background-color: #ffffff;
+    color: #111;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+  }
+  
+  /* Hover & disabled states for generic button */
+  .payment-form button:hover {
+    background-color: #ccc;
+  }
+  
+  .payment-form button:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+  
+  /* Google Pay button styling to match the generic button */
+  .payment-form .google-pay-btn {
+    margin-top: 24px; /* Same margin as other buttons */
+    padding: 14px 20px; /* Same padding */
+    background-color: #ffffff;
+    color: #111;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hover & disabled states for Google Pay button */
+  .payment-form .google-pay-btn:hover {
+    background-color: #ccc;
+  }
+  
+  .payment-form .google-pay-btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+  }
+  
+  /* Google logo styling inside the Google Pay button */
+  .payment-form .google-logo {
+    height: 32px;
+    margin-right: 8px;
+  }
+  
+  /* Optional: Small instructions under the Google Pay button */
+  .payment-form p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+  }
+  
